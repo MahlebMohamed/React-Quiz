@@ -9,11 +9,13 @@ export default function NextButton({ dispatch, answer, numQuestions, index }) {
     }
 
     return (
-        <button
-            className="btn btn-ui"
-            onClick={handleClick}
-        >
-            {numQuestions > index ? 'Next' : 'Finish'}
-        </button>
+        <>
+            <button
+                className="btn btn-ui"
+                onClick={handleClick}
+            >
+                {numQuestions > index ? 'Next' : 'Finish'}
+            </button>
+        </>
     );
 }
